@@ -9,20 +9,16 @@ export default class ImageDemo extends Component {
        
         <Image source={ this.props.image1 } style={{ flex:1, width: '100%', resizeMode: 'stretch'}}></Image>
        
-        <View style={{
-          flex: 1,
-          backgroundColor: 'rgba(255,255,255,0.5)',
-          width: '100%',
-          alignItems: 'center',
-        }}>
-          <Text style={{ flex: 1, fontSize: 40 }}>{ this.props.text1 }</Text>
+        <View style={{ flex: 1, backgroundColor: 'rgba(255,255,255,0.5)', width: '100%', alignItems: 'center', }}>
+          <Text style={{ flex: 1, fontSize: 20, alignItems: 'center', color: 'blue', paddingTop: 20, paddingBottom: 2
+           }}>{ this.props.text1 }</Text>
 
           <Text style={{ flex: 1, fontSize: 60, color: 'green'}}>{ this.props.text2 }</Text>
         </View>
         
-        <View style={{ flex: 1, flexDirection: 'row', width: '100%' }}>
+        <View style={{ flex: 1, flexDirection: 'row', alignItems:'center', width: '100%' }}>
           <Image source={this.props.image3} style={{ flex: 1, width: 50, height:100, resizeMode: 'stretch' }} />
-          <Text style={{ flex: 1, fontSize: 60, color: 'red', textAlign: 'center' }}>{this.props.text3}</Text>
+          <Text style={{ flex: 1, fontSize: 20, color: 'red', textAlign: 'center' }}>{this.props.text3}</Text>
         </View>
 
         <Image source={ this.props.image2 } style={{ flex:1, width: '100%',resizeMode: 'stretch'}}></Image>
