@@ -13,7 +13,7 @@ export default class ImageDemo extends Component {
           <Text style={{ flex: 1, fontSize: 20, alignItems: 'center', color: 'blue', paddingTop: 20, paddingBottom: 2
            }}>{ this.props.text1 }</Text>
 
-          <Text style={{ flex: 1, fontSize: 60, color: 'green'}}>{ this.props.text2 }</Text>
+          <Text style={{ flex: 1, fontSize: 40, color: 'green'}}>{ this.props.text2 }</Text>
         </View>
         
         <View style={{ flex: 1, flexDirection: 'row', alignItems:'center', width: '100%' }}>
@@ -21,9 +21,13 @@ export default class ImageDemo extends Component {
           <Text style={{ flex: 1, fontSize: 20, color: 'red', textAlign: 'center' }}>{this.props.text3}</Text>
         </View>
 
+        <View style={{ flex: 1, backgroundColor: 'white', width:'100%',}}>
+
+          <Text style={{ flex: 1, fontSize: 25, color: 'black', textAlign: 'center',alignItems: 'center'}}>{ this.props.text4 }</Text>
+          <Text style={{ flex: 1, fontSize: 25, color: 'black', textAlign: 'center',alignItems: 'center'}}>{ this.props.text5 }</Text>
+        </View>
+
         <Image source={ this.props.image2 } style={{ flex:1, width: '100%',resizeMode: 'stretch'}}></Image>
-
-
 
       </View>
     )
